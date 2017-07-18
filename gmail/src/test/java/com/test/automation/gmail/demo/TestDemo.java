@@ -23,7 +23,7 @@ public class TestDemo {
 		
 		driver = new FirefoxDriver();
 		
-		
+		Log.info("Navigating to gmail");
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("identifierId")).sendKeys("maxpane.b.567");
 		driver.findElement(By.xpath(".//*[@id='identifierNext']/div[2]")).click();
