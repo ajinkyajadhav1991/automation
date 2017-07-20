@@ -35,13 +35,27 @@ public class TestDemo {
 		driver.findElement(By.xpath("//div[contains(text(), 'COMPOSE')]")).click();
 		
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//textarea[@aria-label='To']")).sendKeys("maxspane.b.567@gmail.com");
+		driver.findElement(By.xpath("//textarea[@aria-label='To']")).sendKeys("maxpane.b.567@gmail.com");
 		
 		Thread.sleep(5000);
 		driver.findElement(By.name("subjectbox")).sendKeys("This is subject");
 		
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[@aria-label='Message Body']")).sendKeys("This is body");
+		
+		driver.findElement(By.xpath("//div[contains(text(), 'Send')]")).click();
+		
+		//driver.findElement(By.xpath("//*[@id=':5o']/div")).click();
+		
+		Thread.sleep(5000);
+		
+		driver.navigate().refresh();
+		
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//*[contains(text(), 'This is subject')]")).click();
+		
+		
+		
 		
 		
 	}

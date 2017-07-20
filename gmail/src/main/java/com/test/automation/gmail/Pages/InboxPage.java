@@ -115,6 +115,11 @@ public class InboxPage extends TestBase {
 		chkBox_mail.click();
 	}
 	
+	public void click_inboxlink() throws InterruptedException{
+		
+		waitforElement(driver, link_Inbox, 30);
+		link_Inbox.click();
+	}
 	
 	
 

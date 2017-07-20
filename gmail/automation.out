@@ -25,3 +25,15 @@
 2017-07-18 02:34:01 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
 2017-07-18 02:34:01 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
 2017-07-18 02:34:01 INFO  LoginPage:48 -Entering username and password
+2017-07-20 08:06:18 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
+2017-07-20 08:06:18 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
+2017-07-20 08:06:18 INFO  LoginPage:48 -Entering username and password
+2017-07-20 08:11:26 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
+2017-07-20 08:11:26 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
+2017-07-20 08:11:26 INFO  LoginPage:48 -Entering username and password
+2017-07-20 08:12:57 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
+2017-07-20 08:12:57 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
+2017-07-20 08:12:57 INFO  LoginPage:48 -Entering username and password
+2017-07-20 08:16:00 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
+2017-07-20 08:16:00 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
+2017-07-20 08:16:00 INFO  LoginPage:48 -Entering username and password
