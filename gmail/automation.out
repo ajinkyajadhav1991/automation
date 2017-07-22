@@ -37,3 +37,9 @@
 2017-07-20 08:16:00 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
 2017-07-20 08:16:00 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
 2017-07-20 08:16:00 INFO  LoginPage:48 -Entering username and password
+2017-07-21 17:24:11 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
+2017-07-21 17:24:11 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
+2017-07-21 17:24:11 INFO  LoginPage:48 -Entering username and password
+2017-07-21 17:28:04 INFO  LoginPage:40 -Initializing PageFactory for LoginPage
+2017-07-21 17:28:04 INFO  LoginPage:43 -PageFactory for LoginPage is initialized
+2017-07-21 17:28:04 INFO  LoginPage:48 -Entering username and password
