@@ -1,8 +1,11 @@
 package com.test.automation.gmail.demo;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -52,7 +55,11 @@ public class TestDemo {
 		driver.navigate().refresh();
 		
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//*[contains(text(), 'This is subject')]")).click();
+		
+		List<WebElement> emails = driver.findElements(By.cssSelector("div[class='y6'] span[id]"));
+		System.out.println(emails.size());
+		
+		//driver.findElement(By.cssSelector("div[class='y6'] span[id]")).click();
 		
 		
 		
