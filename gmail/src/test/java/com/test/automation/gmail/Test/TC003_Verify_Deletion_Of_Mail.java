@@ -46,11 +46,6 @@ public class TC003_Verify_Deletion_Of_Mail extends TestBase {
 		inboxPage.click_Send();
 		
 		
-		
-		//inboxPage.click_Composebutton();
-		inboxPage.select_mail();
-		
-		
 	}
 	
 	

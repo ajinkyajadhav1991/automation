@@ -3,7 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.test.automation.gmail.demo.TestDemo"/>
+      <class name="com.test.automation.gmail.Test.TC003_Verify_Deletion_Of_Mail"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.automation.gmail.Test.TC003_Verify_Deletion_Of_Mail">
+        <methods>
+          <include name="verify_Deletion_Of_Mail"/>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- com.test.automation.gmail.Test.TC003_Verify_Deletion_Of_Mail -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

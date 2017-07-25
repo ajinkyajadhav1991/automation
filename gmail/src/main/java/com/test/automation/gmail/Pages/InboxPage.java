@@ -3,6 +3,8 @@
  */
 package com.test.automation.gmail.Pages;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,8 +41,8 @@ public class InboxPage extends TestBase {
 	@FindBy(xpath="//a[contains(text(),'Inbox (1)')]")
 	WebElement link_Inbox;
 	
-	@FindBy(xpath="//*[@id=':5o']/div")
-	WebElement chkBox_mail;
+	@FindBy(xpath="//div[@class='y6']")
+	List<WebElement> list_of_mails;
 	
 	
 	
@@ -110,15 +112,18 @@ public class InboxPage extends TestBase {
 		
 	}
 	
-	public void select_mail(){
-		
-		chkBox_mail.click();
-	}
+	
 	
 	public void click_inboxlink() throws InterruptedException{
 		
 		waitforElement(driver, link_Inbox, 30);
 		link_Inbox.click();
+	}
+	
+	public void select_email(){
+		
+		list_of_mails.get(0).click();
+		
 	}
 	
 	
