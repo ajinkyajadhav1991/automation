@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,28 +19,25 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.test.automation.gmail.customListener.Listener;
+
 /**
  * @author Ajinkya
  *
  */
 public class TestBase {
 	
-	public WebDriver driver;
-	
-	
+	public static WebDriver driver;
 	public Properties OR = new Properties();
 	
 
-	
-	
 	public void init() throws IOException{
-		
 		loadData();
 		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
 		selectBrowser(OR.getProperty("browser"));
-		enterURL(OR.getProperty("url"));
 		
+		enterURL(OR.getProperty("url"));
 		
 		}
 	
@@ -47,17 +46,13 @@ public class TestBase {
 		File file = new File(System.getProperty("user.dir")+"/src/main/java/com/test/automation/gmail/config/config.properties");
 		FileInputStream f = new FileInputStream(file);
 		OR.load(f);
-			
-		
 		}
 
 
 	public void enterURL(String url) {
 		// TODO Auto-generated method stub
 		driver.get(url);
-		
-		
-	}
+		}
 
 
 	public void selectBrowser(String browser) {
@@ -89,6 +84,12 @@ public class TestBase {
 		driver.quit();
 	}
 	
+	public File getScreenShot(){
+		
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		return scrFile;
+		
+	}
 	
 	
 	
