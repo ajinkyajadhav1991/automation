@@ -1,38 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
-  <listeners>
-    <listener class-name="com.test.automation.gmail.customListener.Listener"/>
-  </listeners>
-  <test name="GmailTest">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.test.automation.gmail.Test.TC001_VerifyLogin"/>
-      <class name="com.test.automation.gmail.Test.TC002_VerifySendEmail"/>
-      <class name="com.test.automation.gmail.Test.TC003_Verify_Deletion_Of_Mail"/>
+      <class name="com.test.automation.gmail.demo.TestDemo"/>
     </classes>
-  </test> <!-- GmailTest -->
-  <test name="GmailTest(failed)">
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.test.automation.gmail.Test.TC002_VerifySendEmail">
+      <class name="com.test.automation.gmail.demo.TestDemo">
         <methods>
-          <include name="setUp"/>
-          <include name="verifySendEmail"/>
-          <include name="tearDown"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.test.automation.gmail.Test.TC002_VerifySendEmail -->
-      <class name="com.test.automation.gmail.Test.TC003_Verify_Deletion_Of_Mail">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUP"/>
-        </methods>
-      </class> <!-- com.test.automation.gmail.Test.TC003_Verify_Deletion_Of_Mail -->
-      <class name="com.test.automation.gmail.Test.TC001_VerifyLogin">
-        <methods>
-          <include name="verifyLogin"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.test.automation.gmail.Test.TC001_VerifyLogin -->
+      </class> <!-- com.test.automation.gmail.demo.TestDemo -->
     </classes>
-  </test> <!-- GmailTest(failed) -->
-</suite> <!-- Failed suite [Regression] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
